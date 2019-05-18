@@ -1,5 +1,6 @@
 function calculateAverage() {
-    const stringNumbers = "34,35,37"
+
+    const stringNumbers = document.getElementById("scores").value
     const stringArray = stringNumbers.split(",")
     const numOfEntries = stringArray.length
     let num = 0
@@ -7,4 +8,5 @@ function calculateAverage() {
       num += parseInt(item)
     }
     const average = num/numOfEntries
+    document.getElementById("grade").innerHTML = average
   }
